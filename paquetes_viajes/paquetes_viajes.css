@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+.encabezado__container{
+    background: #000;
+    width: 100%;
+    padding: 40px 0;
+}
+
+.encabezado {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.encabezado__logo--icono{
+    max-width: 260px;
+}
+
+.encabezado__navegacion ul{
+    display: flex;
+    gap: 40px;
+}
+
+.encabezado__navegacion--elemento{
+    color: var(--blanco);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+figure {
+    margin: 0; /* Para eliminar los márgenes del figure */
+}
+
+.banner_img{
+    width: 100%; /* La imagen ocupará todo el ancho del figure */
+    height: auto; /* Mantiene la proporción de la imagen */
+    display: block; /* Elimina el espacio en blanco debajo de la imagen */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.Destinos_excursion,
+.pago_titulo,
+.testimonios__titulo{
+    color: var(--grafito);
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+    margin-bottom: 64px;
+}
+
+.Destinos_excursion--titulo,
+.pago_titulo--texto,
+.testimonios__titulo--texto{
+    margin-top: 112px;
+}
+
+.subrayado{
+    width: 180px;
+    height: 4px;
+    background: #b81515;
+    margin: 0 auto;
+    margin-top: 16px;
+}
+
+.descripcion_ciudad{
+    color: var(--grafito, #222);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+}
+
+.destino_excursion{
+    display: flex;
+    gap: 24px;
+    align-content: center;
+}
+
+.destino_excursion--img{
+    width: 588px;
+    height: 452px;
+}
+
+.destino_excursion--ciudad{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39.01px;
+}
+
+.publicaciones__elemento--boton{
+    border-radius: 8px;
+    background-color: var(--rojo);
+    padding: 16px 48px;
+    box-sizing: border-box;
+    display: inline-block;
+    margin-top: 16px;
+}
+
+a:visited{
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    color: #ffffff;
+}
+
+.pago_descripcion{
+    margin-top: 60px;
+}
+
+.precio{
+    font-size: 40px;
+    line-height: 48.76px;
+}
+
+.cuotas{
+    font-size: 28px;
+    line-height: 34.13px;
+    margin: 0;
+}
+.parrafo_cuotas{
+    color: var(--grafito, #222);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+}
+
+.pago{
+    display: flex;
+}
+
+.pago_img{
+    display: flex;
+    gap: 24px;
+}
+
+.pago_img--2{
+    margin-top: 24px;
+}
+
+.testimonios {
+    margin-bottom: 112px;
+}
+
+.testimonios__wrapper {
+    display: flex;
+    gap: 24px;
+    align-items: stretch;
+}
+
+.testimonios__elemento {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.testimonios__texto {
+    color: var(--grafito, #222);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    margin: 0;
+}
+
+.testimonios__autor {
+    margin-top: 24px;
+    display: flex;
+    gap: 24px;
+}
+
+.testimonios__autor--foto {
+    max-width: 86px;
+}
+
+.testimonios__autor--nombre {
+    color: var(--grafito, #222);
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+    margin-bottom: 8px;
+}
+
+.pre-footer__image{
+    width: 100%; /* La imagen ocupará todo el ancho del figure */
+    height: auto; /* Mantiene la proporción de la imagen */
+    display: block;
+}
+
+.footer__container {
+    background: var(--negro);
+    width: 100%;
+    padding: 40px 0;
+    margin: -3.5px;
+}
+
+.footer {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    color: var(--blanco, #FFF);
+}
+
+.footer__logo-icon {
+    max-width: 160px;
+    margin-bottom: 16px;
+}
+
+.footer__info-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__text-info {
+    color: var(--neutral-c, #F5F5F5);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px; /* 160% */
+}
+
+.footer__social-media-container {
+    text-align: center;
+}
+
+.footer__social-media-text {
+    color: var(--neutral-c, #F5F5F5);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    margin-bottom: 16px;
+}
+
+/* Para pantallas de hasta 1024px (tabletas) */
+@media (max-width: 1024px) {
+    .encabezado {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .encabezado__navegacion ul {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .destino_excursion {
+        flex-direction: column;
+    }
+
+    .destino_excursion--img {
+        width: 100%;
+        height: auto;
+    }
+
+    .testimonios__wrapper {
+        flex-direction: column;
+    }
+}
+
+/* Para pantallas de hasta 768px (dispositivos móviles) */
+@media (max-width: 768px) {
+    .encabezado__logo--icono {
+        max-width: 160px;
+    }
+
+    .encabezado__navegacion--elemento {
+        font-size: 20px;
+    }
+
+    .descripcion_ciudad {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .destino_excursion--ciudad {
+        font-size: 24px;
+    }
+
+    .precio {
+        font-size: 32px;
+    }
+
+    .cuotas {
+        font-size: 24px;
+    }
+
+    .testimonios__texto {
+        font-size: 14px;
+    }
+
+    .footer {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+/* Para pantallas pequeñas de hasta 480px */
+@media (max-width: 480px) {
+    .encabezado__navegacion--elemento {
+        font-size: 18px;
+    }
+
+    .Destinos_excursion,
+    .pago_titulo,
+    .testimonios__titulo {
+        font-size: 24px;
+    }
+
+    .footer__text-info {
+        font-size: 16px;
+    }
+}

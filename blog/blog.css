@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+.encabezado__container{
+    background: #000;
+    width: 100%;
+    padding: 40px 0;
+}
+
+.encabezado {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.encabezado__logo--icono{
+    max-width: 260px;
+}
+
+.encabezado__navegacion ul{
+    display: flex;
+    gap: 40px;
+}
+
+.encabezado__navegacion--elemento{
+    color: var(--blanco);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+figure {
+    margin: 0; /* Para eliminar los márgenes del figure */
+}
+
+.banner_img{
+    width: 100%; /* La imagen ocupará todo el ancho del figure */
+    height: auto; /* Mantiene la proporción de la imagen */
+    display: block; /* Elimina el espacio en blanco debajo de la imagen */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.ciudad{
+    margin-top: 112px;
+}
+
+.Historia_por_ciudad{
+    color: var(--grafito);
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+    margin-bottom: 64px;
+}
+.subrayado{
+    width: 180px;
+    height: 4px;
+    background: #b81515;
+    margin: 0 auto;
+    margin-top: 16px;
+}
+
+.titulo_seccion{
+    font-style: normal;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 34.13px;
+    margin-top: 48px;
+}
+.titulo_seccion--llegada{
+    font-style: normal;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 34.13px;
+    margin: 0;
+}
+
+.La_llegada{
+    display: flex;
+    gap: 24px;
+    max-width: 1200px;
+}
+.parrafo,
+.descripcion_ciudad{
+    color: var(--grafito, #222);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+}
+
+.otras_publicaciones{
+    display: flex;
+    gap: 24px;
+    align-content: center;
+}
+
+.otras_publicaciones--img{
+    width: 384px;
+    height: 300px;
+}
+
+.otras_publicaciones--ciudad{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39.01px;
+}
+
+.publicaciones__elemento--boton{
+    border-radius: 8px;
+    background-color: var(--rojo);
+    padding: 16px 48px;
+    box-sizing: border-box;
+    display: inline-block;
+    margin-top: 16px;
+}
+
+a:visited{
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    color: #ffffff;
+}
+.footer__container {
+    background: var(--negro);
+    width: 100%;
+    padding: 40px 0;
+    margin-top: 104px;
+}
+
+.footer {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    color: var(--blanco, #FFF);
+}
+
+.footer__logo-icon {
+    max-width: 160px;
+    margin-bottom: 16px;
+}
+
+.footer__info-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__text-info {
+    color: var(--neutral-c, #F5F5F5);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px; /* 160% */
+}
+
+.footer__social-media-container {
+    text-align: center;
+}
+
+.footer__social-media-text {
+    color: var(--neutral-c, #F5F5F5);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    margin-bottom: 16px;
+}
+
+@media (max-width: 1024px) {
+    .encabezado__navegacion ul {
+        gap: 30px;
+    }
+
+    .encabezado__navegacion--elemento {
+        font-size: 20px;
+    }
+
+    .otras_publicaciones--img {
+        width: 350px;
+        height: 250px;
+    }
+
+    .Historia_por_ciudad {
+        font-size: 30px;
+    }
+
+    .parrafo,
+    .descripcion_ciudad {
+        font-size: 20px;
+    }
+
+    .titulo_seccion {
+        font-size: 26px;
+    }
+
+    .footer {
+        flex-direction: row;
+        text-align: left;
+        justify-content: space-between;
+        padding: 20px;
+    }
+
+    .footer__logo-icon {
+        max-width: 180px;
+    }
+
+    .footer__social-media-container {
+        margin-top: 20px;
+    }
+}
+
+
+/* Responsividad para pantallas medianas (tablets) */
+@media (max-width: 768px) {
+    .encabezado__navegacion ul {
+      gap: 20px;
+    }
+  
+    .encabezado__navegacion--elemento {
+      font-size: 18px;
+    }
+  
+    .otras_publicaciones--img {
+      width: 300px;
+      height: 230px;
+    }
+  
+    .Historia_por_ciudad {
+      font-size: 28px;
+    }
+  
+    .parrafo,
+    .descripcion_ciudad {
+      font-size: 18px;
+    }
+  
+    .titulo_seccion {
+      font-size: 24px;
+    }
+  
+    .footer {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+  
+  /* Responsividad para pantallas pequeñas (móviles) */
+@media (max-width: 480px) {
+    .encabezado {
+      flex-direction: column;
+    }
+  
+    .encabezado__logo--icono {
+      max-width: 200px;
+    }
+  
+    .encabezado__navegacion ul {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .encabezado__navegacion--elemento {
+      font-size: 16px;
+    }
+  
+    .otras_publicaciones--img {
+      width: 100%;
+      height: auto;
+    }
+  
+    .Historia_por_ciudad {
+      font-size: 24px;
+    }
+  
+    .titulo_seccion {
+      font-size: 20px;
+    }
+  
+    .parrafo,
+    .descripcion_ciudad {
+      font-size: 16px;
+      line-height: 28px;
+    }
+  
+    .footer {
+      flex-direction: column;
+    }
+  
+    .footer__logo-icon {
+      max-width: 140px;
+    }
+  
+    .footer__social-media-container {
+      margin-top: 16px;
+    }
+}
